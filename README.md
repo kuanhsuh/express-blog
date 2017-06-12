@@ -8,13 +8,17 @@
 ## Video Walkthrough
 
 Add Post
+
 ![](https://github.com/kuanhsuh/express-blog/blob/master/Demo-addPost.gif?raw=true)
 
 Update Post
+
 ![](https://github.com/kuanhsuh/express-blog/blob/master/Demo-updatePost.gif?raw=true)
 
 Delete Post
+
 ![](https://github.com/kuanhsuh/express-blog/blob/master/Demo-deletePost.gif?raw=true)
 
 Add Comment
+
 ![](https://github.com/kuanhsuh/express-blog/blob/master/Demo-addComment.gif?raw=true)
