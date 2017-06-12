@@ -1,0 +1,14 @@
+  <%- include ../partials/header %>
+
+    <a href="/posts/add" class="btn btn-md btn-primary">Add post</a>
+    <h1>Posts Index Pages</h1>
+    <h3>Here are the Following posts</h3>
+    <% posts.forEach(function(post){ %>
+        <h2><%= post.title %></h2>
+        <p><%= post.body %></p>
+        <a href="/posts/<%= post._id%>">Show</a>
+        <a href="/posts/edit/<%= post._id%>">Edit</a>
+        <a href="#" class="deletePost" data-id="<%= post._id%>">Delete</a>
+    <% }) %>
+
+  <%- include ../partials/footer %>

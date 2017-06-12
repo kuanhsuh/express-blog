@@ -1,0 +1,29 @@
+<%- include ../partials/header %>
+
+  <a href="/posts" class="btn btn-md btn-primary">Back To Index</a>
+  <h1><%= post.title %></h1>
+  <p>
+    <%= post.body %>
+  </p>
+
+  <hr>
+  <h2>Comment</h2>
+  <form method='POST' , action='/posts/<%= post._id%>'>
+    <div id="form-group">
+      <label>Name:</label>
+      <input name='username' type="text" class="form-control">
+    </div>
+    <div id="form-group">
+      <label>Comment</label>
+      <input name='comment' type="text" class="form-control">
+    </div>
+    <br>
+    <input value='Submit' type="Submit" class="btn btn-primary">
+  </form>
+
+  <% comments.forEach(function(comment){ %>
+    <h2><%= comment.username %></h2>
+    <p><%= comment.comment %></p>
+  <% }) %>
+
+  <%- include ../partials/footer %>

@@ -1,0 +1,21 @@
+  <%- include ../partials/header %>
+
+<a href="/posts" class="btn btn-lg btn-default">Back To Index</a>
+<h1>Add Post</h1>
+
+<form method='POST', action='/posts/add'>
+<div id="form-group">
+  <label>Title</label>
+  <input name='title' type="text" class="form-control">
+</div>
+<div id="form-group">
+  <label>Body</label>
+  <input name='body' type="text" class="form-control">
+</div>
+<br>
+<input value='Submit' type="Submit" class="btn btn-primary">
+
+</form>
+
+
+  <%- include ../partials/footer %>
